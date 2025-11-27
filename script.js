@@ -76,5 +76,15 @@ while (opcion !== "5") {
         console.log("Entrada inválida. Por favor, ingrese General o VIP.");
       }
       break;
+
+    case "3":
+      if (edad == "") {
+        console.log("Por favor, registre la edad primero (Opción 1).");
+      } else if (edad >= 18) {
+        console.log("Acceso PERMITIDO al Evento Principal.");
+      } else {
+        console.log("Acceso DENEGADO (Menor de edad).");
+      }
+      break;
   }
 }
