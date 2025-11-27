@@ -86,5 +86,19 @@ while (opcion !== "5") {
         console.log("Acceso DENEGADO (Menor de edad).");
       }
       break;
+
+    case "4":
+      if (edad == "" || tipoDeEntrada == "") {
+        console.log(
+          "Por favor, registre la edad (Opción 1) y el tipo de entrada (Opción 2) primero."
+        );
+      } else if (edad >= 18 && tipoDeEntrada == "VIP") {
+        console.log("Acceso PERMITIDO a Zona VIP.");
+      } else if (edad >= 18 && tipoDeEntrada == "General") {
+        console.log("Acceso DENEGADO (Requiere entrada VIP).");
+      } else {
+        console.log("Acceso DENEGADO (Menor de edad).");
+      }
+      break;
   }
 }
